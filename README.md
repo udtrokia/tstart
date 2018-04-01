@@ -1,7 +1,22 @@
 
-### Typescrit training follow docs step by step 🤺
+# Typescrit training follow docs step by step 🤺
 
-## Types
+### TsLint Config  
+
+_use ts-node and tslint to check grammer._  
+
+```json
+{
+    "scripts":{
+        "lint": "ts-node tslint -c tslint.json './tsrc/**/*.{ts.tsx}'"
+    }
+}
+```  
+
+### Types  
+
+_the "<>" in type declaration._  
+
 ```
 // Array
 let list: Array<number> = [1, 2, 3];
@@ -10,4 +25,4 @@ let list: Array<number> = [1, 2, 3];
 let someValue: any = "this is a string";
 let strLength: number = (<string>someValue).length;
 ```  
-_the "<>" in type declaration._
+
