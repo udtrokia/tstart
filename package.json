@@ -1,0 +1,14 @@
+{
+  "name": "Tstart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mercurio <udtrokia@163.com>",
+  "license": "MIT",
+  "scripts":{
+    "lint":"ts-node tslint -c tslint.json 'tsrc/**/*.{ts,tsx}'"
+  },
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  }
+}
