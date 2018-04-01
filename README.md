@@ -10,4 +10,4 @@ let list: Array<number> = [1, 2, 3];
 let someValue: any = "this is a string";
 let strLength: number = (<string>someValue).length;
 ```  
-__the "<>" in type declaration. __
+_the "<>" in type declaration._
