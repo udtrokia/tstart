@@ -1,5 +1,5 @@
 
-# Typescrit training follow docs step by step 🤺
+## Typescrit training following docs step by step 🤺
 
 ### TsLint Config  
 
@@ -26,3 +26,16 @@ let someValue: any = "this is a string";
 let strLength: number = (<string>someValue).length;
 ```  
 
+### Interface  
+
+_?: in interface:_  
+
+```typescript
+interface SquareConfig{
+    color?: string;
+    width?: number;
+}
+```  
+
+
+### 
