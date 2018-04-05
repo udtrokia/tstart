@@ -1,5 +1,6 @@
-
-// First Interface
+  /////////////////////
+ // First Interface //
+/////////////////////
 interface LabelledValue {
   label: string;
 }
@@ -11,7 +12,9 @@ function printLabel(labelledObj: LabelledValue): void {
 let myObj = {size: 10, label: "Size 10 Object"};
 printLabel(myObj);
 
-// Optional Properties
+  /////////////////////////
+ // Optional Properties //
+/////////////////////////
 interface SquareConfig {
   color?: string;
   width?: number;
@@ -30,9 +33,12 @@ function createSquare(config: SquareConfig): {color: string; area: number} {
 };
 
 let mySquare = createSquare(<SquareConfig>{color: "black"});
+let mySquare2 = createSquare({color: "black"} as SquareConfig);
 console.log(mySquare);
 
-// Readonly properties
+  /////////////////////////
+ // Readonly properties //
+/////////////////////////
 interface Point {
   readonly x: number;
   readonly y: number;
@@ -51,3 +57,23 @@ let mySearch: SearchFunc = function(source, sub){
   return result > -1;
 }
 console.log(mySearch("hello", "o"))
+
+  /////////////////////
+ // Indexable Types///
+/////////////////////
+
+interface StringArray {
+  [index: number]: string;
+}
+
+let myArray: StringArray;
+myArray = ["Bob", "Fred"];
+
+let myStr: string = myArray[0];
+console.log(myStr)
+
+
+  /////////////////
+ // Class Types //
+/////////////////
+
