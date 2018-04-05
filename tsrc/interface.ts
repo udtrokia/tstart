@@ -77,3 +77,17 @@ console.log(myStr)
  // Class Types //
 /////////////////
 
+interface ClockInterface {
+  currentTime: Date;
+  setTime(d: string): void;
+}
+
+class Clock implements ClockInterface {
+  currentTime: Date;
+  setTime(d: string) {
+    this.currentTime = d;
+  }
+}
+let a = new Clock
+a.setTime('987')
+console.log(a.currentTime)
