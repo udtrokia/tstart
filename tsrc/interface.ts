@@ -79,17 +79,39 @@ console.log(myStr)
 
 interface ClockInterface {
   currentTime: Date;
-  setTime(d: string): void;
+  setTime(d: Date): void;
 }
 
 class Clock implements ClockInterface {
   currentTime: Date;
-  setTime(d: string) {
-    this.currentTime = d;
+  setTime(d: Date) {
+    this.currentTime = d
+  }
+  constructor(){
+    this.currentTime = new Date()
   }
 }
 let a = new Clock
-a.setTime('987')
 console.log(a.currentTime)
 
-// class extends
+  ////////////////////////
+ // Extends Interfaces //
+////////////////////////
+
+interface Shape {
+  color: string;
+}
+
+interface Square extends Shape {
+  sideLength: number;
+}
+
+let square = <Square>{};
+square.color = "blue";
+square.sideLength = 10;
+
+
+console.log(square)
+
+
+
