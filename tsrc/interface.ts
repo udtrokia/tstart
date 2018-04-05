@@ -91,3 +91,5 @@ class Clock implements ClockInterface {
 let a = new Clock
 a.setTime('987')
 console.log(a.currentTime)
+
+// class extends
